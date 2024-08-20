@@ -38,6 +38,10 @@ function validaCPF(cpf) {
         return false;
     }
 
+    cpf =cpf.replace("/[.-]/g", "");
+    console.log(cpf);
+
+
     let soma = 0;
 
     for(let i=1; i<=9;i++){
@@ -60,6 +64,7 @@ function validaCPF(cpf) {
     return false;
 
    }
+
 
 
     return true;
